@@ -126,7 +126,7 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-离线测试包含答案映射、解析、重试及超时恢复；浏览器测试使用合成页面和独立无头 Chromium，不登录智慧树、不连接正在使用的个人浏览器。GitHub Actions 在 Windows 的 Node.js 22/24 上执行这两类检查。测试覆盖这些行为，不代表覆盖平台所有题目或页面状态。
+离线测试包含答案映射、解析、重试及超时恢复；浏览器测试使用合成页面和独立无头浏览器，不登录智慧树、不连接正在使用的个人浏览器。默认使用 Chromium；GitHub Actions 在 Windows 的 Node.js 22/24 上使用预装的 Edge 执行检查，无需另行下载 Chromium。测试覆盖这些行为，不代表覆盖平台所有题目或页面状态。
 
 测试浏览器下载受限时，也可使用已安装的 Edge 进行无头检查：在 PowerShell 中设置 `$env:ZHS_TEST_BROWSER_CHANNEL='msedge'`，然后执行 `npm run test:browser`。日常测评使用 Edge，不受这项测试设置影响。
 

@@ -5,6 +5,8 @@ permissions:
 jobs:
   test:
     runs-on: windows-latest
+    env:
+      ZHS_TEST_BROWSER_CHANNEL: msedge
     strategy:
       matrix:
         node: [22, 24]
@@ -17,5 +19,4 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run check:release
-      - run: npx playwright install chromium
       - run: npm run test:browser
