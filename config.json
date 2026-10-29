@@ -1,0 +1,10 @@
+{
+  "cdpUrl": "http://127.0.0.1:9222",
+  "courseUrl": "https://ai-smart-course-student-pro.zhihuishu.com/singleCourse/knowledgeStudy/2101609010059079680/299118",
+  "timeoutMs": 120000,
+  "maxRounds": 100,
+  "maxStagnantRounds": 5,
+  "solver": "course-ai",
+  "solverAttempts": 3,
+  "answerTimeoutMs": 1800000
+}

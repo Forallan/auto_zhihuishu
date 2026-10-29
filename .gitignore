@@ -1,0 +1,15 @@
+/node_modules/
+/browser-profile/
+/data/
+/config.local.json
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+*.pfx
+/playwright-report/
+/test-results/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+{
+  "name": "auto-zhihuishu",
+  "version": "0.2.0",
+  "description": "Windows automation for one specified Zhihuishu National Security course assessment workflow",
+  "license": "MIT",
+  "author": "Forallan",
+  "engines": { "node": ">=22" },
+  "repository": { "type": "git", "url": "https://github.com/Forallan/auto_zhihuishu.git" },
+  "bugs": { "url": "https://github.com/Forallan/auto_zhihuishu/issues" },
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node cli.mjs run", "inspect": "node cli.mjs inspect", "test": "node --test tests/domain.test.mjs tests/solver.test.mjs", "test:browser": "node --test tests/browser.test.mjs", "check:release": "node scripts/check-release.mjs" },
+  "dependencies": { "playwright": "1.62.1" }
+}
